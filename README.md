@@ -122,4 +122,16 @@ You will attach `Metasploitable.qcow2` to a new VM in UTM.
 
 ---
 
+## 4️⃣ Create Metasploutable 2 VM
+
+Metasploitable 2 is an x86 image, so you must **Emulate** (not Virtualize). This will be slower but works.
+1. Open **UTM** and click **"Create a New Virtual Machine** (or +).
+2. Choose **Emulate**.
+3. For **System / Operating System**, choose a generic x86 Linux / "Other" entry (depending on UTM version).
+4. Configure **Hardware**:
+   - CPU: `1-2` cores.
+   - Memory: `512 MB - 1MB`.
+
+
+
 
