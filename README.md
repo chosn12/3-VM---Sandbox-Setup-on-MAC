@@ -106,3 +106,20 @@ UTM works best with `qcow2` disks, so convert the `.vmdk` image using `qemu-img`
 
    ```bash
    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+2. Install **qemu** using Homebrew:
+
+   ```bash
+   brew install qemu
+3. Open **Terminal** and change to the folder containing the Metasploitable `.vmdk` file:
+
+   ```bash
+   cd /path/to/metasploitable/folder
+4. Convert the `.vmdk` to `qcow2`:
+
+   ```bash
+   qemu-ing convert -f vmdk -O qcow2 Metasploitable.vmdk Metasploitable.qcow2
+You will attach `Metasploitable.qcow2` to a new VM in UTM.
+
+---
+
+
