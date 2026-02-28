@@ -131,7 +131,15 @@ Metasploitable 2 is an x86 image, so you must **Emulate** (not Virtualize). This
 4. Configure **Hardware**:
    - CPU: `1-2` cores.
    - Memory: `512 MB - 1MB`.
+5. In the **Storage** section:
+   - Do**not** create a new empty disk.
+   - Instead, add an **existing disk** and select `Metasploitable.qcow2`.
+6. Leaves other defaults (no ISO required; it already has an OS).
+7. Name the VM (e.g., `Metasploitable 2) and click **Save**.
+8. Start the VM.
+9. When it boots tp a login prompt, log in with the default credentials (commonly `msfadmin/msfadmin`-verify with Metasploitable's documentation).
 
-
+Now Metasploitable 2 is running under UTM.
+  >⚠️ Metasploitable is intentionally vulnerable. Keep it isolated and never expose it directly to untrusted networks.
 
 
