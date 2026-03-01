@@ -142,4 +142,20 @@ Metasploitable 2 is an x86 image, so you must **Emulate** (not Virtualize). This
 Now Metasploitable 2 is running under UTM.
   >⚠️ Metasploitable is intentionally vulnerable. Keep it isolated and never expose it directly to untrusted networks.
 
+## 5️⃣ Network Setup: Lab/Sandbox Mode
+For a self-contained lab, keep all three VMs on UTM's default internal NAT network. This allows:
+- VMs to talk to each other.
+- VMs to reach the internet (for updates/tools).
+- External machines (outside your Mac) not to reach the VMs directly.
 
+**Check/Adjust Network Settings**
+Repeat for **Windows 11**, **Ubuntu**, and **Metasploitable 2**:
+1. In **UTM**, select the VM and open **Settings**.
+2. Go to the **Network** tab.
+3. Ensure:
+   - **Network Mode** is a NAT/ internal virtual network mode (not bridged to your physical interface).
+   - Each VM has at least one network adapter attached to the internal network.
+  
+Once set, the three VMs should be able to communicate within your sandbox.
+
+---
