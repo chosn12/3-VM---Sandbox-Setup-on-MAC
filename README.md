@@ -1,4 +1,4 @@
-# 🧪 3‑VM Security Sandbox on macOS with UTM
+# ❓ 3 VM Security Sandbox on macOS with UTM
 
 This README walks through setting up a 3‑VM sandbox on a Mac using UTM with:
 - One Windows 11 VM  
@@ -185,3 +185,13 @@ You should see replies.
 3. Optionally install tools (e.g, Nmap, a browser) in Windows 11 and target the Metasploitable IP for learning/testing.
 
 ---
+
+## ✅ Summary
+After folling this guide, you will have:
+- A Windows 11 VM (ARM)
+- An Ubuntu VM (ARM)
+- A Metasploitable 2 VM (x86, emulated)
+- All three connected via UTM's internal NAT network (Shared Network), forming a safe sandbox for security practice.
+
+
+
