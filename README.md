@@ -159,3 +159,29 @@ Repeat for **Windows 11**, **Ubuntu**, and **Metasploitable 2**:
 Once set, the three VMs should be able to communicate within your sandbox.
 
 ---
+
+## 6️⃣ Verifying Connectivity Inside the Lab
+**From Ubuntu ➜ Metasploitable**
+1. In the Ubuntu VM, open a terminal.
+2. Find its IP:
+
+   ```bash
+   ip a
+3. Find Metasploitable's IP (log into Metaslpoitable and use `ifconfig` or `ip a`).
+4. From Ubuntu, ping Metasploitable:
+
+   ```bash
+   ping <metasploitable-ip>
+
+You should see replies.
+
+**From Windows 11 ➜ Metasploitable**
+1. In Windows 11, open **Command Prompt**.
+2. Ping Metasploitable:
+
+   ```cmd
+   ping <metasploitable-ip>
+
+3. Optionally install tools (e.g, Nmap, a browser) in Windows 11 and target the Metasploitable IP for learning/testing.
+
+---
